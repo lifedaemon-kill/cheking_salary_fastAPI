@@ -5,9 +5,9 @@ app = FastAPI(
 )
 
 employees = [
-    {"id": 1, "name": "Товарищ Р.",             "salary_increase_date": "11.07.2023"},
-    {"id": 2, "name": "Г М", "salary_increase_date": "13.08.2023"},
-    {"id": 3, "name": "Линус Торвальдс",        "salary_increase_date": "01.01.2024"},
+    {"id": 1, "name": "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ.",             "salary_increase_date": "11.07.2023"},
+    {"id": 2, "name": "пїЅ пїЅ", "salary_increase_date": "13.08.2023"},
+    {"id": 3, "name": "пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ",        "salary_increase_date": "01.01.2024"},
 ]
 
 @app.get("/empl/{empl_id}")
