@@ -5,8 +5,8 @@ app = FastAPI(
 )
 
 employees = [
-    {"id": 1, "name": "Commrade R.", "salary_increase_date": "11.07.2023"},
-    {"id": 2, "name": "G M", "salary_increase_date": "13.08.2023"},
+    {"id": 1, "name": "R.", "salary_increase_date": "11.07.2023"},
+    {"id": 2, "name": "Maximillon", "salary_increase_date": "13.08.2023"},
     {"id": 3, "name": "Linux Torwaldos", "salary_increase_date": "01.01.2024"},
 ]
 
@@ -16,6 +16,6 @@ def get_user(user_id: int):
 
 
 @app.get("/date_inc_salary")
-def get_salary_increase_date(user_id, login=0, password=0):
+def get_salary_increase_date(user_id: int):
     return [empl for empl in employees if empl.get("id") == user_id]
 
